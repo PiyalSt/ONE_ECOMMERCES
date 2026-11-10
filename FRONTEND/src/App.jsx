@@ -15,15 +15,17 @@ import Listing from "./pages/shopping/Listing";
 import Checkout from "./pages/shopping/Checkout";
 import Account from "./pages/shopping/Account";
 import CheckAuth from "./components/common/CheckAuth";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
-  const isAuthenticated = true;
-  const user = {
-    role: 'admin'
-  };
+  const isAuthenticated = false;
+  const user = null;
 
   return (
     <div>
+      {/* Hot Toast */}
+      <Toaster />
+
       {/* Routes */}
       <BrowserRouter>
         <Routes>
